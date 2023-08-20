@@ -1,0 +1,23 @@
+{
+  "name": "express-message-board",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=express-message_board:* npm run devstart"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@prettier/plugin-pug": "^3.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.2"
+  }
+}

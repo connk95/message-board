@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title 
+
+  div(class="messageBoard") 
+    each m in messages
+      div(class="message")
+        p #{m.text}
+        <b> #{m.user}</b>
+        p #{m.added}
+      <br>
+
+  button(type='submit' class="submit" name="submit")
+    a(href="http://localhost:3000/new") Post 
+
+

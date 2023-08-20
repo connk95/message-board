@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div(class="newPost")
+        <form method="POST" action="/new">
+            p Name: 
+            input(type="text" class="name" name="userName" required)
+            p Message: 
+            input(type="text" name="userMessage" required)
+            br
+            button(type="submit") Post
+        </form>
